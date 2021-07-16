@@ -54,7 +54,7 @@ html {
 
 #slider {
     background: url(/teamwork/asset/img/pizza.jpg) center / cover no-repeat;
-    padding-top: 80%;
+    padding-top: 70%;
     position: relative;
     filter: grayscale(50%);
     width: 100%;
@@ -110,7 +110,6 @@ html {
 
 #slider .openn-1{
     padding: 8px 16px;
-    
 }
 
 #slider .from{
