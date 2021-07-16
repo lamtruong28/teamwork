@@ -10,6 +10,10 @@ html {
     line-height: 1.5;
 }
 
+.clear {
+    clear: both;
+}
+
 #header {
     height: 52px;
     background-color: #000;
@@ -42,3 +46,69 @@ html {
     background-color: #ccc;
     color: #000;
 }
+
+#the-menu {
+    padding: 64px 16px;
+    background-color: #000;
+}
+
+#the-menu .body-menu {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.body-menu .heading-menu {
+    margin: 10px 0 64px;
+    text-align: center;
+    font-size: 64px;
+    color: #fff;
+}
+
+.body-menu .title-menu {
+    border: 1px solid #ccc;
+}
+
+.body-menu .nav-menu {
+    list-style: none;
+}
+
+.body-menu .nav-menu li {
+    float: left;
+    display: block;
+    width: 33.33333%;
+    text-align: center;
+}
+
+.body-menu .nav-menu a {
+    font-size: 36px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+}
+
+.body-menu .nav-menu a:hover {
+    background-color: #f44336;
+}
+
+.nav-menu .pizza {
+    background-color: #f44336;
+}
+
+.body-menu .menu-lists {
+    background-color: #fff;
+    padding: 16px 32px;
+}
+
+.menu-lists .item-list {
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
