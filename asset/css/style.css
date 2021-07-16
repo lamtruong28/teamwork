@@ -9,3 +9,36 @@ html {
     font-size: 15px;
     line-height: 1.5;
 }
+
+#header {
+    height: 52px;
+    background-color: #000;
+    opacity: 0.6;
+}
+
+#header:hover {
+    opacity: 1;
+}
+
+#header .nav-lists {
+    list-style: none;
+}
+
+#header .nav-lists li {
+    display: inline-block;
+}
+
+#header .nav-lists a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    line-height: 52px;
+    padding: 0 16px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+#header .nav-lists a:hover {
+    background-color: #ccc;
+    color: #000;
+}
