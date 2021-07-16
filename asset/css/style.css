@@ -54,10 +54,10 @@ html {
 
 #slider {
     background: url(/teamwork/asset/img/pizza.jpg) center / cover no-repeat;
-    padding-top: 50%;
+    padding-top: 80%;
     position: relative;
-    min-height: 90%;
     filter: grayscale(50%);
+    width: 100%;
     
 }
 
