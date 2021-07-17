@@ -293,6 +293,7 @@ p {
     color: #fff;
 }
 
+.content-contact p,
 .content-about p {
     font-size: 20px !important;
     margin: 24px 0;
