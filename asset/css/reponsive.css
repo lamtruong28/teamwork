@@ -15,6 +15,7 @@
 
     #header .nav-lists li {
         display: block;
+        border-bottom: 1px solid #ccc;
     }
 
     #header .nav-lists li:first-child {
