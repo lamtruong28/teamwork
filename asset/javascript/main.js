@@ -36,6 +36,7 @@ starter.onclick = function () {
 //Mobile:
 
 var menuMobile = document.getElementById('menu-mobile');
+var overFlow = document.getElementById ('over-flow');
 var header =  document.getElementById('header');
 var headerHeight = header.clientHeight;
 
@@ -44,19 +45,26 @@ menuMobile.onclick = function () {
     var isClose = header.clientHeight === headerHeight;
     if (isClose) {
         header.style.height = 'auto';
+        overFlow.style.display = 'block';
     }else {
         header.style.height = null;
+        overFlow.style.display = null;
     }
 }
 
 //Tự đọng đóng khi chọn menu:
 var menuItems = document.querySelectorAll('#header .nav-lists li a');
-console.log(menuItems)
 for (var i = 0; i< menuItems.length ; i++) {
     var menuItem = menuItems[i];
     menuItem.onclick = function () {
         header.style.height = null;
+        overFlow.style.display = null;
     }
+}
+
+overFlow.onclick = function () {
+    this.style.display = 'none';
+    header.style.height = null;
 }
 
 

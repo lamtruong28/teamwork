@@ -228,14 +228,47 @@ html {
 }
 
 .item-list .hot {
-    color: #fff;
+    color: #fff !important;
     background-color: #f44336 !important;
+    animation: vibrate linear 1s infinite;
 }
 
-.item-list .new,
-.item-list .item-name span {
-    color: #000;
+.item-list .new {
     background-color: #9e9e9e;
+    animation: change-text  linear 1s infinite;
+}
+
+@keyframes change-text {
+    0% {
+        color: rgb(208, 255, 0);
+    }
+   50% {
+       color: rgb(255, 0, 0);
+    }
+    100% {
+        color: rgb(208, 255, 0);
+    }
+
+
+}
+
+@keyframes vibrate {
+    0% {
+        transform: rotate(0)
+    }
+    25% {
+        transform:  rotate(20deg)
+    }
+    50% {
+        transform:  rotate(0)
+    }
+
+    75% {
+        transform:  rotate(-20deg)
+    }
+    100% {
+        transform: rotate(0)    
+    }
 }
 
 #menu-salasd,
@@ -352,5 +385,13 @@ text-align: justify;
     color: rgb(0, 255, 55);
 }
 
-
+#over-flow {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    display: none;
+}
 
