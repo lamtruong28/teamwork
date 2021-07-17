@@ -10,19 +10,25 @@ pizza.onclick = function () {
     menuPizza.style.display = null;
     menuSalasd.style.display = 'none';
     menuStarter.style.display = 'none';
+    this.style.backgroundColor = '#f44336';
+    salasd.style.backgroundColor = '#000';
+    starter.style.backgroundColor = '#000';
 }
 
 salasd.onclick = function () {
-    menuSalasd.style.display = null;
+    menuSalasd.style.display = 'block';
     menuPizza.style.display = 'none';
     menuStarter.style.display = 'none';
-    pizza.style.backgroundColor = '#000 !important'
-    this.style.backgroundColor = '#f44336 !important'
-    pizza.style.backgroundColor = '#000 !important'
+    this.style.backgroundColor = '#f44336';
+    pizza.style.backgroundColor = '#000';
+    starter.style.backgroundColor = '#000';
 }
 
 starter.onclick = function () {
-    menuStarter.style.display = null;
+    menuStarter.style.display = 'block';
     menuSalasd.style.display = 'none';
     menuPizza.style.display = 'none';
+    this.style.backgroundColor = '#f44336';
+    pizza.style.backgroundColor = '#000';
+    salasd.style.backgroundColor = '#000';
 }
