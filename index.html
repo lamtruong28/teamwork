@@ -18,7 +18,7 @@
                 <li><a href="">Contact</a></li>
             </ul>
         </div>
-
+        <!-- Slider -->
         <div id="slider">
             <div class="slider__heading">
                 <span>
@@ -33,20 +33,21 @@
             </div>
         </div>
 
+        <!-- The menu -->
         <div id="body-content">
             <div class="content">
                 <div class="content__section">
                     <h1 class="heading">THE MENU</h1>
                     <div class="title-menu">
                         <ul class="nav-menu">
-                            <li><a class="pizza" href="">PIZZA</a></li>
-                            <li><a href="">SALASD</a></li>
-                            <li><a href="">STARTER</a></li>
+                            <li><button id="pizza" class="pizza">PIZZA</button></li>
+                            <li><button id="salasd">SALASD</button></li>
+                            <li><button id="starter">STARTER</button></li>
                         </ul>
                         <div class="clear"></div>
                     </div>
-
-                    <div class="menu-lists">
+                    <!-- Item lists menu Pizza-->
+                    <div id="menu-pizza" class="menu-lists">
                         <div class="item-list">
                             <h1 class="item-name">Margherita <span class="price" >$12.50</span></h1>
                             <p class="desc">Fresh tomatoes, fresh mozzarella, fresh basil</p>
@@ -77,11 +78,55 @@
                             <p class="desc">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
                         </div>
                     </div>
+                    <!-- Item lists menu Salasd-->
+                    <div id="menu-salasd" class="menu-lists">
+                        <div class="item-list">
+                            <h1 class="item-name">Lasagna <span>Popular</span> <span class="price" >$13.50</span></h1>
+                            <p class="desc">Special sauce, mozzarella, parmesan, ground beef</p>
+                        </div>
+
+                        <div class="item-list">
+                            <h1 class="item-name">Ravioli <span class="price" >$14.50</span></h1>
+                            <p class="desc">Ravioli filled with cheese</p>
+                        </div>
+
+                        <div class="item-list">
+                            <h1 class="item-name">Spaghetti Classica <span class="price" >$11.00</span></h1>
+                            <p class="desc">Fresh tomatoes, onions, ground beef</p>
+                        </div>
+
+                        <div class="item-list">
+                            <h1 class="item-name">Seafood pasta<span class="price" >$25.50</span></h1>
+                            <p class="desc">Salmon, shrimp, lobster, garlic</p>
+                        </div>
+                    </div>
+                    <!-- Item lists menu Starter-->
+                    <div id="menu-starter" class="menu-lists">
+                        <div class="item-list">
+                            <h1 class="item-name">Today's Soup <span>Seasonal</span> <span class="price" >$5.50</span></h1>
+                            <p class="desc">Ask the waiter</p>
+                        </div>
+
+                        <div class="item-list">
+                            <h1 class="item-name">Bruschetta <span class="price" >$8.50</span></h1>
+                            <p class="desc">Bread with pesto, tomatoes, onion, garlic</p>
+                        </div>
+
+                        <div class="item-list">
+                            <h1 class="item-name">Garlic bread <span class="price" >$9.50</span></h1>
+                            <p class="desc">Grilled ciabatta, garlic butter, onions</p>
+                        </div>
+
+                        <div class="item-list">
+                            <h1 class="item-name">Tomozzarella <span class="price" >$10.50</span></h1>
+                            <p class="desc">Tomatoes and mozzarella</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- About -->
-        <div class="content body-about">
+        <div class="content content-about">
             <div class="content__section">
                 <h1 class="heading">About</h1>
                 <p>
@@ -116,13 +161,34 @@
                 </div>
             </div>
         </div>
+        <!-- Map -->
+        <div class="map">
+            <img class="map__img" src="./asset/img/map.jpg" alt="Map">
+        </div>
 
+        <!-- Contact -->
+        <div class="content content-contact">
+            <div class="content__section">
+                <h1 class="heading">Contact</h1>
+                <p>Find us at some address at some place or call us at 05050515-122330</p>
+                <p><span>FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+                <p class="message"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+                
+                <form action="" class="form-contact">
+                    <input type="text" required placeholder="name">
+                    <input type="number" required placeholder="how many people">
+                    <input type="datetime-local" name="" value="2021-07-17T12:00" required placeholder="date time">
+                    <input type="text" required placeholder="Message \ Special requirements">
+                    <input class="btn-send-msg" type="submit" value="SEND MESSAGE">
+                </form>
+            </div>
+        </div>
 
         <div id="footer">
-            Đây là footer
-            ở đây có thể them icon
+           <p class="coppyright">Powered by <a href="">w3.css</a></p>
         </div>
 
     </div>
 </body>
+    <script src="./asset/javascript/main.js"></script>
 </html>

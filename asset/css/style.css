@@ -149,19 +149,23 @@ html {
     text-align: center;
 }
 
-.content__section .nav-menu a {
+.content__section .nav-menu button {
+    font: inherit;
     font-size: 36px;
     display: block;
     color: #fff;
+    background-color: #000;
     text-decoration: none;
     padding: 12px 24px;
+    width: 100%;
+    border: none;
 }
 
-.content__section .nav-menu a:hover {
+.content__section .nav-menu button:hover {
     background-color: #f44336;
 }
 
-.nav-menu .pizza {
+#pizza {
     background-color: #f44336;
 }
 
@@ -218,18 +222,18 @@ html {
 
 /* CSS About */
 
-.body-about {
+.content-about {
     background-color: #f44336;
     filter: grayscale(75%);
     color: #fff;
 }
 
-.body-about p {
+.content p {
     font-size: 24px;
     margin: 24px 0;
 }
 
-.body-about p .img-chef {
+.content-about p .img-chef {
     width: 150px;
     float: right;
     border-radius: 50%;
@@ -255,14 +259,73 @@ display: flex;
 .time-lists .item-list {
     width: 50%;
 }
+/*Map */
 
+.map {
+    display: block;
+}
 
+.map .map__img {
+    width: 100%;
+    vertical-align: middle;
+    filter: grayscale();
+}
 
+/* Contact */
 
+.content-contact {
+    background-color: #607d8b;
+    color: #fff;
+    filter: grayscale(50%);
+}
 
+.content-contact span {
+    background-color: #000;
+    padding: 0 8px;
+}
 
+.content__section .message {
+    font-size: 36px;
+}
 
+.content__section .form-contact input {
+    display: block;
+    width: 100%;
+    margin: 24px 0;
+    padding: 16px 8px; 
+    font: inherit; /*kế thừa*/
+    font-size: 24px;
+    line-height: 1.5;
+    border: none;
+}
 
+.btn-send-msg {
+    padding: 8px 16px !important; 
+}
+
+.btn-send-msg:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#footer {
+    padding: 84px 0;
+    background-color: #000;
+    text-align: center;
+}
+
+#footer .coppyright {
+    font-size: 36px;
+    color: #fff;
+}
+
+#footer .coppyright a {
+    color: #fff;
+}
+
+#footer .coppyright a:hover {
+    color: rgb(0, 255, 55);
+}
 
 
 
