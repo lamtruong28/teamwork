@@ -5,7 +5,8 @@
 }
 
 html {
-    font-family: Amatic SC, sans-serif;
+    font-family: Amatic SC,Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
     font-size: 15px;
     line-height: 1.5;
 }
@@ -47,10 +48,24 @@ html {
     text-transform: uppercase;
 }
 
+#menu-mobile:hover,
 #header .nav-lists a:hover {
     background-color: #ccc;
     color: #000;
 }
+
+/* Menu-mobile */
+#menu-mobile {
+    display: none;
+    position: absolute;
+    color: #fff;
+    top: 0;
+    right: 0;
+    line-height: 52px;
+    padding: 0 24px;
+    font-size: 20px;
+}
+
 
 #slider {
     min-height: 90vh;
@@ -81,6 +96,7 @@ html {
     padding: 8px 16px;
     margin: 15px 0;
     display: inline-block;
+    text-decoration: none;
 }
 
 #slider .open{
@@ -203,7 +219,8 @@ html {
 }
 
 .item-list .new,
-.item-list .hot {
+.item-list .hot,
+.item-list .item-name span {
     padding: 0 8px;
     display: inline-block;
     border-radius: 4px;
@@ -212,10 +229,11 @@ html {
 
 .item-list .hot {
     color: #fff;
-    background-color: #f44336;
+    background-color: #f44336 !important;
 }
 
-.item-list .new {
+.item-list .new,
+.item-list .item-name span {
     color: #000;
     background-color: #9e9e9e;
 }
@@ -235,7 +253,6 @@ html {
 
 .content p {
     font-size: 24px;
-    margin: 24px 0;
 }
 
 .content-about p .img-chef {
@@ -252,6 +269,10 @@ html {
     width: 100%;
 }
 
+.time-opening {
+    text-align: center;
+}
+
 .time-opening h1 {
     font-size: 36px;
     padding: 4px 0 10px;
@@ -259,11 +280,10 @@ html {
 
 .time-lists {
 display: flex;
+justify-content: space-around;
+text-align: justify;
 }
 
-.time-lists .item-list {
-    width: 50%;
-}
 /*Map */
 
 .map {

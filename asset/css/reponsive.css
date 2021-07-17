@@ -1,0 +1,78 @@
+/* PC */
+@media (min-width:64em) {
+    
+}
+
+/*Tablet*/
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    
+}
+
+@media (max-width: 46.1875em) {
+    #header {
+        overflow: hidden;
+    }
+
+    #header .nav-lists li {
+        display: block;
+    }
+
+    #menu-mobile {
+        display: block;
+    }
+
+    .slider__heading span {
+        font-size: 60px;
+        font-weight: bolder;
+    }
+
+    .content p {
+        margin: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

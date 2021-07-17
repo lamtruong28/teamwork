@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store Pizza</title>
     <link rel="stylesheet" href="./asset/css/style.css">
-    
+    <link rel="stylesheet" href="./asset/css/reponsive.css">
+    <link rel="stylesheet" href="./asset/Fonts-icon/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css">
 </head>
 <body>
     <div id="main">
         <div id="header">
             <ul class="nav-lists">
-                <li><a href="">Home</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#the-menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <i id="menu-mobile" class="fas fa-bars"></i>
         </div>
         <!-- Slider -->
         <div id="slider">
@@ -25,7 +27,7 @@
                     thin<br>
                     CRUST PIZZA <br>
                 </span>
-                <a class="the-menu">Let me see the menu</a>
+                <a class="the-menu" href="#the-menu">Let me see the menu</a>
             </div>
             
             <div class="open-time">
@@ -35,7 +37,7 @@
 
         <!-- The menu -->
         <div id="body-content">
-            <div class="content">
+            <div id="the-menu" class="content">
                 <div class="content__section">
                     <h1 class="heading">THE MENU</h1>
                     <div class="title-menu">
@@ -126,7 +128,7 @@
             </div>
         </div>
         <!-- About -->
-        <div class="content content-about">
+        <div id="about" class="content content-about">
             <div class="content__section">
                 <h1 class="heading">About</h1>
                 <p>
@@ -167,7 +169,7 @@
         </div>
 
         <!-- Contact -->
-        <div class="content content-contact">
+        <div id="contact" class="content content-contact">
             <div class="content__section">
                 <h1 class="heading">Contact</h1>
                 <p>Find us at some address at some place or call us at 05050515-122330</p>
