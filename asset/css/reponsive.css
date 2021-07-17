@@ -17,6 +17,10 @@
         display: block;
     }
 
+    #header .nav-lists li:first-child {
+        display: inline-block;
+    }
+
     #menu-mobile {
         display: block;
     }
@@ -24,10 +28,6 @@
     .slider__heading span {
         font-size: 60px;
         font-weight: bolder;
-    }
-
-    .content p {
-        margin: 0;
     }
 
 

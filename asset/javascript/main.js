@@ -32,3 +32,37 @@ starter.onclick = function () {
     pizza.style.backgroundColor = '#000';
     salasd.style.backgroundColor = '#000';
 }
+
+//Mobile:
+
+var menuMobile = document.getElementById('menu-mobile');
+var header =  document.getElementById('header');
+var headerHeight = header.clientHeight;
+
+//Đóng mở menu:
+menuMobile.onclick = function () {
+    var isClose = header.clientHeight === headerHeight;
+    if (isClose) {
+        header.style.height = 'auto';
+    }else {
+        header.style.height = null;
+    }
+}
+
+//Tự đọng đóng khi chọn menu:
+var menuItems = document.querySelectorAll('#header .nav-lists li a');
+console.log(menuItems)
+for (var i = 0; i< menuItems.length ; i++) {
+    var menuItem = menuItems[i];
+    menuItem.onclick = function () {
+        header.style.height = null;
+    }
+}
+
+
+
+
+
+
+
+
