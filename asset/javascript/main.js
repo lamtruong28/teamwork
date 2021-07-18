@@ -62,6 +62,7 @@ for (var i = 0; i< menuItems.length ; i++) {
     }
 }
 
+//Đóng menu khi bấm vào khoảng không:
 overFlow.onclick = function () {
     this.style.display = 'none';
     header.style.height = null;
