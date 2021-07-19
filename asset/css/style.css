@@ -52,6 +52,7 @@ p {
     padding: 0 16px;
     font-size: 24px;
     text-transform: uppercase;
+    border-radius: 4px;
 }
 
 #menu-mobile:hover,
@@ -104,6 +105,7 @@ p {
     margin: 15px 0;
     display: inline-block;
     text-decoration: none;
+    border-radius: 10px;
 }
 
 #slider .open{
@@ -173,7 +175,7 @@ p {
     text-align: center;
 }
 
-.content__section .nav-menu button {
+.content__section .nav-menu span {
     font: inherit;
     font-size: 36px;
     display: block;
@@ -182,11 +184,29 @@ p {
     text-decoration: none;
     padding: 12px 24px;
     width: 100%;
-    border: none;
+    border-right: 1px solid #ccc ;
 }
 
-.content__section .nav-menu button:hover {
+.content__section .nav-menu span:hover {
     background-color: #f44336;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.order {
+    display: block;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+.order:hover {
+    background-color: #ccc;
+    color: #000;
     cursor: pointer;
     transition: all 0.3s;
 }
@@ -222,7 +242,6 @@ p {
 .item-list .desc {
     color: #616161;
     padding: 36px 0;
-    margin-bottom: 20px;
     font-size: 36px;
     border-bottom: 1px solid #ddd;
 }
